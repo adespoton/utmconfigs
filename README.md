@@ -1,6 +1,8 @@
 # utmconfigs
 Config files for booting Mac OS on UTM emulator for macOS (possibly for iOS as well)
 
+Note: for installing OS X 10.6.8 and up, the certificate is checked to see if it has expired.  If your system clock is past the expiry date, the installer will say it can't install on the device.  To fix this, open up Terminal from the Utilities menu and type date -u 0101010115 (the last two digits is the year) or adjust the last digits to the year the installer was released, or any year between that and the year the certificate expired.  Then quit Terminal and continue your install session.
+
 System Architecture: m68k
 
 System: Macintosh Quadra 800 (q800)
