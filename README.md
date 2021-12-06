@@ -40,7 +40,7 @@ System Architecture: i386 (x86)
 
 System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn
-- Drives: OVMF.bin type Disk Image interface USB, EFI-i386.img type Disk Image interface USB
+- Drives: OVMF-32.bin, Type: ROM; EFI-i386.img, Type: Disk Image, Interface: USB
 - Mac OS X 10.4
 - Mac OS X Server 10.4
 - Mac OS X 10.5
@@ -52,6 +52,7 @@ System Architecture: x86_64
 
 System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
+- Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
 - Mac OS X 10.6
 - Mac OS X Server 10.6
 - Mac OS X 10.7 - booting with -usbdevice keyboard and Network e1000
