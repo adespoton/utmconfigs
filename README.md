@@ -21,7 +21,7 @@ OS: - all these currently run in qemu-system-ppc-screamer; I need to convert the
 - Mac OS 9.0.4
 - Mac OS 9.1
 - Mac OS 9.2
-- Mac OS 9.2.1
+- Mac OS 9.2.1 - booting with -usbdevice keyboard
 - Mac OS 9.2.2
 - Mac OS X Server 1.2v3
 - Mac OS X Public Beta - Date needs to be set with -rtc base="2000-10-01",clock=vm
