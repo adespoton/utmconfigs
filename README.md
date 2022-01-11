@@ -77,7 +77,7 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - macOS 10.14 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 - macOS 10.15 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 
-- macOS 11 - not booting
+- macOS 11 - panicking or getting to (/) during boot.
 - macOS 12 - not booting
   
 System Architecture: aarch64
