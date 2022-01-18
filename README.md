@@ -25,7 +25,7 @@ System Architecture: PowerPC
 System: Mac99 based PowerMAC (mac99) - currently in UTM via qemu-system-ppc-screamer.  Note that this breaks snapshotting (pause button) for PowerPC UTM targets, which is why QEMU doesn't include screamer (audio) support in the official build.
 
 OS: - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
-- Mac OS 9.0.4
+- Mac OS 9.0.4 - under UTM, only booting to flashing ?.  Works fine under qemu-system-ppc-screamer.
 - Mac OS 9.1
 - Mac OS 9.2
 - Mac OS 9.2.1 - booting with -usbdevice keyboard -usbdevice tablet
