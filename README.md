@@ -77,11 +77,11 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - macOS 10.14 - booting with -usbdevice keyboard -usbdevice tablet, network: Emulated VLAN, vmxnet3
 - macOS 10.15 - booting with -usbdevice keyboard -usbdevice tablet, network: Emulated VLAN, vmxnet3
 
-- macOS 11 - panicking or getting to (/) during boot.
-- macOS 12 - not booting
+- macOS 11 - booting to language selection screen; USB bus is dropped due to contention during boot process, so no mouse or keyboard.
+- macOS 12 - haven't attempted yet.
   
 System Architecture: aarch64
 System: Apple Virtualizer
-- macOS 11 - not booting
+- macOS 11 - not compatible
 - macOS 12 - will download IPSW install image and boot using UTM 3.  No config file provided as UTM automates the entire process already.  Can only use raw disk images.
 
