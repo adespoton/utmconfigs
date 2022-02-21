@@ -26,24 +26,24 @@ System: Mac99 based PowerMAC (mac99) - currently in UTM via qemu-system-ppc-scre
 
 OS: - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
 - Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.  Boot is broken in UTM 3.1.
-- Mac OS 9.1 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
+- Mac OS 9.1 - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.0
-- Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS 9.2.2 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
+- Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard
+- Mac OS 9.2.2 - booting with network and audio with -usbdevice keyboard
 - Mac OS X Server 1.2v3 - has issues with g3Beige emulation.  Won't boot.
 - Mac OS X Public Beta - Date needs to be set by adding -rtc base="2000-10-01",clock=vm to the QEMU arguments, which doesn't work as of UTM 3.1. Requires via=cuda in Machine Properties.  
 - Mac OS X 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
 - Mac OS X Server 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
 - Mac OS X 10.1 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input. I needed to set my CPU to G3 to boot.
 - Mac OS X Server 10.1 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.  I needed to set my CPU to G3 to boot.
-- Mac OS X 10.2 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X Server 10.2 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X 10.3 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X Server 10.3 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X 10.4 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X Server 10.4 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X 10.5 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
-- Mac OS X Server 10.5 - booting with network and audio with -usbdevice keyboard -usbdevice tablet
+- Mac OS X 10.2 - booting with network and audio with -usbdevice keyboard
+- Mac OS X Server 10.2 - booting with network and audio with -usbdevice keyboard
+- Mac OS X 10.3 - booting with network and audio with -usbdevice keyboard
+- Mac OS X Server 10.3 - booting with network and audio with -usbdevice keyboard
+- Mac OS X 10.4 - booting with network and audio with -usbdevice keyboard
+- Mac OS X Server 10.4 - booting with network and audio with -usbdevice keyboard
+- Mac OS X 10.5 - booting with network and audio with -usbdevice keyboard
+- Mac OS X Server 10.5 - booting with network and audio with -usbdevice keyboard
 
 System Architecture: i386 (x86)
 
@@ -66,13 +66,13 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
 - Mac OS X 10.6 - panicking or getting to (/) during boot.
 - Mac OS X Server 10.6 - panicking or getting to (/) during boot.
-- Mac OS X 10.7 - booting with -usbdevice keyboard  -usbdevice tablet, Network: Emulated VLAN, e1000
-- OS X 10.8 - booting with -usbdevice keyboard -usbdevice tablet, Network: Emulated VLAN, e1000
-- OS X 10.9 - booting with -usbdevice keyboard -usbdevice tablet, Network: Emulated VLAN, usb-net
-- OS X 10.10 - booting with -usbdevice keyboard -usbdevice tablet, no network
-- OS X 10.11 - booting with -usbdevice keyboard -usbdevice tablet, network: Emulated VLAN, vmxnet3
-- macOS 10.12 - booting with -usbdevice keyboard -usbdevice tablet, network: Emulated VLAN, vmxnet3
-- macOS 10.13 - booting with -usbdevice keyboard -usbdevice tablet, network: Emulated VLAN, vmxnet3
+- Mac OS X 10.7 - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
+- OS X 10.8 - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
+- OS X 10.9 - booting with -usbdevice keyboard, Network: Emulated VLAN, usb-net
+- OS X 10.10 - booting with -usbdevice keyboard, no network
+- OS X 10.11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- macOS 10.12 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- macOS 10.13 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 
 System Architecture: x86_64
 System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
