@@ -4,7 +4,8 @@ Config files for booting Mac OS on UTM emulator for macOS (possibly for iPadOS a
 To use these files, you'll need an installed copy of UTM.app for macOS from https://mac.getutm.app (or iOS) or from https://github.com/utmapp/UTM/releases for unstable releases, and you'll need to provide your own installation media; a basic unformatted qcow2 disk image is provided as the install target.  I've tested the configs with UTM 2 and UTM 3, on macOS and they work with both.  The following instructions assume you're installing on macOS, and will need to be tweaked slightly for iPadOS/iOS.
 
 - Copy the .utm file you want to use into /Users/<youruser>/Library/Containers/com.utmapp.UTM/Data/Documents/ .  This can be done by double-clicking the unzipped file.
-- For macOS 10.13 to 12, you can use https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS-v2.py (run from Terminal.app using python fetch-macOS-v2.py) to download a base install image.
+- For macOS 10.13 to 12, you can use https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS-v2.py (run from Terminal.app using python fetch-macOS-v2.py) to download a base install image.  Other installer locations are provided inside the config notes.
+- If using full installers instead of just the baseconfig.img files, you can run https://github.com/BITespresso/createinstalliso  to convert the .app installers to a bootable .iso.  Note that some of these can't be converted from an M1 Mac (but can be converted from inside an x86-64 UTM guest).
 - Inside the UTM interface, select your virtual machine, Select the CD/DVD drop-down, click Browse, and open the img file you downloaded with fetch-macOS-v2.py (or some other way).
 - Start the virtual machine.  You may need to enter Disk Utility and format the included drive image prior to running your installation if a drive target is not available in the install window.  Disk Utility is available in a menu item in the installer.
 
