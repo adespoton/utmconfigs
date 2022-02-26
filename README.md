@@ -32,7 +32,7 @@ OS: - all these currently run in qemu-system-ppc-screamer; I need to convert the
 - Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.2 - booting with network and audio with -usbdevice keyboard
 - Mac OS X Server 1.2v3 - has issues with g3Beige emulation.  Won't boot.
-- Mac OS X Public Beta - Date needs to be set by adding -rtc base="2000-10-01",clock=vm to the QEMU arguments, which doesn't work as of UTM 3.1. Requires via=cuda in Machine Properties.  
+- Mac OS X Public Beta - Date needs to be set by adding -rtc base="2000-10-01",clock=vm to the QEMU arguments. Requires via=cuda in Machine Properties.  First boot must be done with networking disabled, to disable the Apple time server, otherwise NTP clobbers the RTC base and PB refuses to run.
 - Mac OS X 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
 - Mac OS X Server 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
 - Mac OS X 10.1 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input. I needed to set my CPU to G3 to boot.
