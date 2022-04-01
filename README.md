@@ -13,19 +13,24 @@ Note: for installing OS X 10.6.8 and up, the certificate is checked to see if it
 
 Note2: On an M1 MBP, I've had issues with keyboard input for all emulated hardware types.  I've had to add "-usbdevice keyboard" to the QEMU list for OS X 10.2 and up.  UTM already adds a tablet device by default.
 
-System Architecture: m68k - bootable builds not available in UTM yet.
+## System Architecture: m68k - bootable builds not available in UTM yet.
 
-System: Macintosh Quadra 800 (q800)
+### System: Macintosh Quadra 800 (q800)
+- currently waiting on upstream patches in qemu-system-m68k.  Custom builds of qemu-system-m68k are available.
 
-OS: 
+### OS: 
+- Don't work in UTM yet:
+- System 7.5.0
+- 8.1
+- A/UX 3.x 
 
-- System 7.5 - 8.1 / A/UX 3.x: currently waiting on upstream patches in qemu-system-m68k.  Custom builds of qemu-system-m68k are available.
+## System Architecture: PowerPC 
 
-System Architecture: PowerPC 
+### System: Mac99 based PowerMAC (mac99) 
+- currently in UTM via qemu-system-ppc-screamer.  Note that this breaks snapshotting (pause button) for PowerPC UTM targets, which is why QEMU doesn't include screamer (audio) support in the official build.
 
-System: Mac99 based PowerMAC (mac99) - currently in UTM via qemu-system-ppc-screamer.  Note that this breaks snapshotting (pause button) for PowerPC UTM targets, which is why QEMU doesn't include screamer (audio) support in the official build.
-
-OS: - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
+### OS: 
+- all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
 - Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.
 - Mac OS 9.1 - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.0
@@ -46,9 +51,9 @@ OS: - all these currently run in qemu-system-ppc-screamer; I need to convert the
 - Mac OS X 10.5 - booting with network and audio with -usbdevice keyboard
 - Mac OS X Server 10.5 - booting with network and audio with -usbdevice keyboard
 
-System Architecture: i386 (x86)
+## System Architecture: i386 (x86)
 
-System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35) - All OSes below currently not booting past the initial boot stage in UTM.
+### System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35) - All OSes below currently not booting past the initial boot stage in UTM.
 - Advanced: CPU: Penryn
 - Drives: OVMF.bin, Type: ROM; EFI-Legacy.img, Type: Disk Image, Interface: USB
   - or
@@ -60,9 +65,9 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35) - All OSes be
 - Mac OS X 10.6
 - Mac OS X Server 10.6
 
-System Architecture: x86_64
+## System Architecture: x86_64 (Legacy)
 
-System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
+### System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
 - Mac OS X 10.6 - panicking or getting to (/) during boot.
@@ -75,7 +80,8 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - macOS 10.12 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 - macOS 10.13 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 
-System Architecture: x86_64
+## System Architecture: x86_64 (Modern)
+
 System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
@@ -85,7 +91,7 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - macOS 11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 - macOS 12 - haven't attempted yet.
   
-System Architecture: aarch64
+## System Architecture: aarch64
 System: Apple Virtualizer
 - macOS 11 - not compatible
 - macOS 12 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
