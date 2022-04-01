@@ -26,7 +26,7 @@ System Architecture: PowerPC
 System: Mac99 based PowerMAC (mac99) - currently in UTM via qemu-system-ppc-screamer.  Note that this breaks snapshotting (pause button) for PowerPC UTM targets, which is why QEMU doesn't include screamer (audio) support in the official build.
 
 OS: - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
-- Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.  Boot is broken in UTM 3.1.
+- Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.
 - Mac OS 9.1 - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.0
 - Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard
@@ -80,13 +80,13 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
 - macOS 10.14 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
-- macOS 10.15 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- macOS 10.15 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 
-- macOS 11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- macOS 11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 - macOS 12 - haven't attempted yet.
   
 System Architecture: aarch64
 System: Apple Virtualizer
 - macOS 11 - not compatible
-- macOS 12 - will download IPSW install image and boot using UTM 3.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (32GB or larger).
+- macOS 12 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
 
