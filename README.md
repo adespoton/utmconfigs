@@ -13,6 +13,8 @@ Note: for installing OS X 10.6.8 and up, the certificate is checked to see if it
 
 Note2: On an M1 MBP, I've had issues with keyboard input for all emulated hardware types.  I've had to add "-usbdevice keyboard" to the QEMU list for OS X 10.2 and up.  UTM already adds a tablet device by default.
 
+Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want to roll your own with tweaked drivers etc, the latest version is available at https://github.com/acidanthera/OpenCorePkg/releases/
+
 ## System Architecture: m68k - bootable builds not available in UTM yet.
 
 ### System: Macintosh Quadra 800 (q800)
