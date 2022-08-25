@@ -33,7 +33,7 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 
 ### OS: 
 - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
-- Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.
+- Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.  Vanilla QEMU-system-ppc run from the command line doesn't have this issue and is a viable alternative, as is SheepShaver.
 - Mac OS 9.1 - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.0
 - Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard
