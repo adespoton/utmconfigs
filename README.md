@@ -18,7 +18,7 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 ## System Architecture: m68k - bootable builds not available in UTM yet.
 
 ### System: Macintosh Quadra 800 (q800)
-- currently waiting on upstream patches in qemu-system-m68k.  Custom builds of qemu-system-m68k are available.
+- currently waiting on upstream patches in qemu-system-m68k.  Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .
 
 ### OS: 
 - Don't work in UTM yet:
