@@ -91,7 +91,7 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - macOS 10.15 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 
 - macOS 11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
-- macOS 12 - haven't attempted yet.
+- macOS 12 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
   
 ## System Architecture: aarch64
 System: Apple Virtualizer
