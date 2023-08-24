@@ -34,24 +34,24 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 ### OS: 
 - all these currently run in qemu-system-ppc-screamer; I need to convert them to UTM configs
 - Mac OS 9.0.4 - Requires G4 Cube Install CD (Mac OS ROM >= 5.6) and via=cuda in Machine Properties.  No keyboard support even with -usbdevice keyboard. Memory must be greater than 64MB and less than 1024MB.  Vanilla QEMU-system-ppc run from the command line doesn't have this issue and is a viable alternative, as is SheepShaver.
-- Mac OS 9.1 - booting with network and audio with -usbdevice keyboard
+- [Mac OS 9.1](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/Mac%2520OS%25209.1%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
 - Mac OS 9.2.0
-- Mac OS 9.2.1 - booting with network and audio with -usbdevice keyboard
-- Mac OS 9.2.2 - booting with network and audio with -usbdevice keyboard
+- [Mac OS 9.2.1](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/Mac%2520OS%25209.2.1%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS 9.2.2](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/Mac%2520OS%25209.2.2%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
 - Mac OS X Server 1.2v3 - has issues with g3Beige emulation.  Won't boot.
-- Mac OS X Public Beta - Date needs to be set by adding -rtc base="2000-10-01",clock=vm to the QEMU arguments. Requires via=cuda in Machine Properties.  First boot must be done with networking disabled, to disable the Apple time server, otherwise NTP clobbers the RTC base and PB refuses to run.
-- Mac OS X 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
-- Mac OS X Server 10.0 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
-- Mac OS X 10.1 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input. I needed to set my CPU to G3 to boot.
-- Mac OS X Server 10.1 - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.  I needed to set my CPU to G3 to boot.
-- Mac OS X 10.2 - booting with network and audio with -usbdevice keyboard
-- Mac OS X Server 10.2 - booting with network and audio with -usbdevice keyboard
-- Mac OS X 10.3 - booting with network and audio with -usbdevice keyboard
-- Mac OS X Server 10.3 - booting with network and audio with -usbdevice keyboard
-- Mac OS X 10.4 - booting with network and audio with -usbdevice keyboard
-- Mac OS X Server 10.4 - booting with network and audio with -usbdevice keyboard
-- Mac OS X 10.5 - booting with network and audio with -usbdevice keyboard
-- Mac OS X Server 10.5 - booting with network and audio with -usbdevice keyboard
+- [Mac OS X Public Beta](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010%2520Public%2520Beta%2520(config%2520only).utm.zip) - Date needs to be set by adding -rtc base="2000-10-01",clock=vm to the QEMU arguments. Requires via=cuda in Machine Properties.  First boot must be done with networking disabled, to disable the Apple time server, otherwise NTP clobbers the RTC base and PB refuses to run.
+- [Mac OS X 10.0](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.0%2520(config%2520only).utm.zip) - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
+- [Mac OS X Server 10.0](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.0%2520(config%2520only).utm.zip) - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.
+- [Mac OS X 10.1](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.1%2520(config%2520only).utm.zip) - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input. I needed to set my CPU to G3 to boot.
+- [Mac OS X Server 10.1](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.1%2520(config%2520only).utm.zip) - Requires via=cuda in Machine Properties.  Capture and uncapture mouse a few times to get mouse and keyboard input.  I needed to set my CPU to G3 to boot.
+- [Mac OS X 10.2](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.2%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X Server 10.2](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.2%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X 10.3](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.3%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X Server 10.3](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.3%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X 10.4](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.4%2520PPC%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X Server 10.4](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.4%2520PPC%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X 10.5](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.5%2520PPC%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
+- [Mac OS X Server 10.5](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%2520Server%252010.5%2520PPC%2520(config%2520only).utm.zip) - booting with network and audio with -usbdevice keyboard
 
 ## System Architecture: i386 (x86)
 
@@ -74,27 +74,26 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
 - Mac OS X 10.6 - panicking or getting to (/) during boot.
 - Mac OS X Server 10.6 - panicking or getting to (/) during boot.
-- Mac OS X 10.7 - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
-- OS X 10.8 - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
-- OS X 10.9 - booting with -usbdevice keyboard, Network: Emulated VLAN, usb-net
-- OS X 10.10 - booting with -usbdevice keyboard, no network
-- OS X 10.11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
-- macOS 10.12 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
-- macOS 10.13 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- [Mac OS X 10.7](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.7%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
+- [OS X 10.8](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.8%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
+- [OS X 10.9](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.9%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, usb-net
+- [OS X 10.10](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.10%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, no network
+- [OS X 10.11](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%2520X%252010.11%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- [macOS 10.12](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252010.12%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- [macOS 10.13](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252010.13%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 
 ## System Architecture: x86_64 (Modern)
 
 System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
-- macOS 10.14 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
-- macOS 10.15 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
+- [macOS 10.14](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252010.14%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
+- [macOS 10.15](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252010.15%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 
-- macOS 11 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
-- macOS 12 - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
+- [macOS 11](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252011%2520X86-64%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
+- [macOS 12](utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%252012%2520X86-64%2520(config%2520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
   
 ## System Architecture: aarch64
 System: Apple Virtualizer
 - macOS 11 - not compatible
 - macOS 12 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
-
