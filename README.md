@@ -18,12 +18,11 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 ## System Architecture: m68k - bootable builds not available in UTM yet.
 
 ### System: Macintosh Quadra 800 (q800)
-- currently waiting on upstream patches in qemu-system-m68k.  Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .
+- Only available in qemu-system-m68k 8.2 and later.  Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .  Homebrew QEMU will also work.  UTM uses QEMU 7.2, and so is not compatible.
 
 ### OS: 
 - Don't work in UTM yet:
-- System 7.5.0
-- 8.1
+- System 7.1 - Mac OS 8.1
 - A/UX 3.x 
 
 ## System Architecture: PowerPC 
@@ -72,8 +71,8 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 ### System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
-- Mac OS X 10.6 - panicking or getting to (/) during boot.
-- Mac OS X Server 10.6 - panicking or getting to (/) during boot.
+- Mac OS X 10.6 - panicking or getting to (/) during boot.  A QEMU-TCG image created on an Intel Mac will boot on Apple Architecture QEMU, but not UTM.
+- Mac OS X Server 10.6 - panicking or getting to (/) during boot.  A QEMU-TCG image created on an Intel Mac will boot on Apple Architecture QEMU, but not UTM.
 - [Mac OS X 10.7](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.7%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
 - [OS X 10.8](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.8%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
 - [OS X 10.9](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.9%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, usb-net
@@ -90,10 +89,12 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - [macOS 10.14](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252010.14%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3
 - [macOS 10.15](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252010.15%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
 
-- [macOS 11](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252011%252520X86-64%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
-- [macOS 12](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252012%252520X86-64%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.
+- [macOS 11](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252011%252520X86-64%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.  NVMe device not compatible with snapshotting.
+- [macOS 12](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/macOS%25252012%252520X86-64%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, network: Emulated VLAN, vmxnet3 - unstable, prone to drive corruption.  NVMe device not compatible with snapshotting.
   
 ## System Architecture: aarch64
 System: Apple Virtualizer
 - macOS 11 - not compatible
 - macOS 12 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
+- macOS 13 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
+- macOS 14 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
