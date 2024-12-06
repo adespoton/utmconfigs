@@ -15,14 +15,14 @@ Note2: On an M1 MBP, I've had issues with keyboard input for all emulated hardwa
 
 Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want to roll your own with tweaked drivers etc, the latest version is available at https://github.com/acidanthera/OpenCorePkg/releases/ . You'll want to configure your EFI packages similar to how it's been done with https://github.com/khronokernel/khronokernel.github.io/tree/master/Binaries/OpenCore .
 
-## System Architecture: m68k - bootable builds not available in UTM yet.
+## System Architecture: m68k - available in UTM as of version 4.6.3.
 
 ### System: Macintosh Quadra 800 (q800)
-- Only available in qemu-system-m68k 8.2 and later.  Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .  Homebrew QEMU will also work.  UTM uses QEMU 7.2, and so is not compatible.
-
+- Only available in qemu-system-m68k 8.2 and later.  Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .  Homebrew QEMU will also work.
 ### OS: 
+- System 7.1 - Mac OS 8.1 - works with UTM 4.6.3 and later.  utmconfig files will be up when I've got the time to add them.  First versions likely won't have audio or networking.
+
 - Don't work in UTM yet:
-- System 7.1 - Mac OS 8.1
 - A/UX 3.x 
 
 ## System Architecture: PowerPC 
