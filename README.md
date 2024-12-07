@@ -1,7 +1,7 @@
 # utmconfigs
 Config files for booting Mac OS on UTM emulator for macOS (possibly for iPadOS as well).
 
-To use these files, you'll need an installed copy of UTM.app for macOS from https://mac.getutm.app (or iOS) or from https://github.com/utmapp/UTM/releases for unstable releases, and you'll need to provide your own installation media; a basic unformatted qcow2 disk image is provided as the install target.  I've tested the configs with UTM 2 and UTM 3, on macOS and they work with both.  The following instructions assume you're installing on macOS, and will need to be tweaked slightly for iPadOS/iOS.
+To use these files, you'll need an installed copy of UTM.app for macOS from https://mac.getutm.app (or iOS) or from https://github.com/utmapp/UTM/releases for unstable releases, and you'll need to provide your own installation media; a basic unformatted qcow2 disk image is provided as the install target.  I've tested the configs with UTM 2, UTM 3 and UTM 4, on macOS for M-Series Macs and they work (with the exception of particular configs that won't work on older versions, as indicated).  The following instructions assume you're installing on macOS on an M-series Mac, and will need to be tweaked slightly for iPadOS/iOS.  Results may also differ on Intel Macs.
 
 - Copy the .utm file you want to use into /Users/[youruser]/Library/Containers/com.utmapp.UTM/Data/Documents/ .  This can be done by double-clicking the unzipped file.
 - For macOS 10.13 to 12, you can use https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS-v2.py (run from Terminal.app using python fetch-macOS-v2.py) to download a base install image.  Other installer locations are provided inside the config notes.
