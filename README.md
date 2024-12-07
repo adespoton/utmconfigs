@@ -94,6 +94,4 @@ System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 ## System Architecture: aarch64
 System: Apple Virtualizer
 - macOS 11 - not compatible
-- macOS 12 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
-- macOS 13 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
-- macOS 14 - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
+- macOS 12 and up - will download IPSW install image and boot using UTM 3+.  No config file provided as UTM automates the entire process already.  Can only use raw disk images at this time, so create one of the appropriate size (48GB or larger).  Image cannot be resized once it has been created.
