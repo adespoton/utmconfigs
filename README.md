@@ -5,7 +5,7 @@ To use these files, you'll need an installed copy of UTM.app for macOS from http
 
 - Copy the .utm file you want to use into /Users/[youruser]/Library/Containers/com.utmapp.UTM/Data/Documents/ .  This can be done by double-clicking the unzipped file.
 - For macOS 10.13 to 12, you can use https://raw.githubusercontent.com/kholia/OSX-KVM/master/fetch-macOS-v2.py (run from Terminal.app using python fetch-macOS-v2.py) to download a base install image.  Other installer locations are provided inside the config notes.
-- If using full installers instead of just the baseconfig.img files, you can run https://github.com/BITespresso/createinstalliso  to convert the .app installers to a bootable .iso.  Note that some of these can't be converted from an M1 Mac (but can be converted from inside an x86-64 UTM guest).
+- If using full installers instead of just the baseconfig.img files, you can run https://github.com/BITespresso/createinstalliso  to convert the .app installers to a bootable .iso.  Note that these can now all be converted from an M-series Mac.
 - Inside the UTM interface, select your virtual machine, Select the CD/DVD drop-down, click Browse, and open the img file you downloaded with fetch-macOS-v2.py (or some other way).
 - Start the virtual machine.  You may need to enter Disk Utility and format the included drive image prior to running your installation if a drive target is not available in the install window.  Disk Utility is available in a menu item in the installer.
 
