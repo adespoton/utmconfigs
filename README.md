@@ -21,7 +21,7 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 - Only available in UTM 4.6.3 and later. Custom builds of qemu-system-m68k are available from https://www.emaculation.com/forum/viewforum.php?f=37 .  Homebrew QEMU will also work.
 ### OS: 
 - System 7.1 - Mac OS 8.1 - works with UTM 4.6.3 and later.  utmconfig files will be up when I've got the time to add them.  First versions don't have audio or networking or VirtIO.
-- [System 7.1]([https://github.com/adespoton/utmconfigs/blob/main/](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/System%207.1%20(Installer).utm.zip)
+- [System 7.1](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/System%207.1%20(Installer).utm.zip)
 - [System 7.1.1](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/https://github.com/adespoton/utmconfigs/blob/main/System%207.1.1%20(Config%20Only).utm.zip)
 - [System 7.1.2](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/https://github.com/adespoton/utmconfigs/blob/main/System%207.1.2%20(Config%20Only).utm.zip)
 - [System 7.5.3](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/https://github.com/adespoton/utmconfigs/blob/main/System%207.5.3%20(Config%20Only).utm.zip)
