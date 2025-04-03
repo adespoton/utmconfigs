@@ -79,8 +79,8 @@ Note3: The X86 installs depend on OpenCore EFI to boot correctly.  If you want t
 ### System: Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-6.1) (q35)
 - Advanced: CPU: Penryn with CPU flags sse4.1, sse4.2, ssse3
 - Drives: OVMF.bin, Type: ROM; EFI-LEGACY.img, Type: Disk Image, Interface: USB
-- Mac OS X 10.6 - panicking or getting to (/) during boot.  A QEMU-TCG image created on an Intel Mac will boot on Apple Architecture QEMU, but not UTM.
-- Mac OS X Server 10.6 - panicking or getting to (/) during boot.  A QEMU-TCG image created on an Intel Mac will boot on Apple Architecture QEMU, but not UTM.
+- [Mac OS X 10.6](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.6%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
+- Mac OS X Server 10.6 - more complicated setup; essentially, install 10.6, and then over-install with the Server DVD.
 - [Mac OS X 10.7](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.7%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
 - [OS X 10.8](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.8%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, e1000
 - [OS X 10.9](https://intradeus.github.io/http-protocol-redirector?r=utm://downloadVM?url=https://github.com/adespoton/utmconfigs/raw/main/OS%252520X%25252010.9%252520(config%252520only).utm.zip) - booting with -usbdevice keyboard, Network: Emulated VLAN, usb-net
